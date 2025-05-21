@@ -1,57 +1,84 @@
 body {
-  background-color: #d5e1ef;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  margin: 0;
+    background-color: #d5e1ef;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    padding: 1rem;
 }
 
 .card {
-  background-color: white;
-  width: 320px;
-  height: 499px;
-  border-radius: 20px;
-  padding: 20px;
-  box-shadow: 0 25px 25px rgba(0, 0, 0, 0.1);
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  gap: 24px;
+    background-color: white;
+    border-radius: 1.25rem;
+    padding: 1.5rem;
+    width: 100%;
+    max-width: 375px;
+    text-align: center;
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.1);
 }
 
 .card img {
-  width: 100%;
-  height: auto;
-  border-radius: 15px;
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    border-radius: 0.9375rem;
 }
 
 .card h2 {
-  font-size: 1.25rem;
-  color: #1f3251;
-  margin: 0;
+    font-size: 1.5rem;
+    margin: 1.25rem 0 0.625rem;
+    color: #1f3251;
+    font-weight: 700;
 }
 
 .card p {
-  font-size: 0.9375rem;
-  color: #7b879d;
-  margin: 0;
-  padding: 0 10px;
+    font-size: 1rem;
+    color: #7b879d;
+    padding: 0 1rem;
+    line-height: 1.5;
+}
+
+/* Mobile view adjustments */
+@media (max-width: 768px) {
+    .card {
+        max-width: 350px; 
+        padding: 1.25rem; 
+    }
+
+    .card img {
+        max-width: 280px; 
+    }
+
+    .card h2 {
+        font-size: 1.25rem; 
+        margin: 1rem 0 0.5rem;
+    }
+
+    .card p {
+        font-size: 0.9rem; 
+        padding: 0 0.75rem;
+    }
 }
 
 @media (max-width: 375px) {
-  .card {
-    width: 90vw;
-    height: auto;
-    padding: 16px;
-  }
+    .card {
+        max-width: 320px; 
+        padding: 1rem;
+    }
 
-  .card h2 {
-    font-size: 1.1rem;
-  }
+    .card img {
+        max-width: 260px;
+    }
 
-  .card p {
-    font-size: 0.85rem;
-  }
+    .card h2 {
+        font-size: 1.1rem;
+        margin: 0.75rem 0 0.5rem;
+    }
+
+    .card p {
+        font-size: 0.85rem;
+        padding: 0 0.5rem;
+    }
 }
