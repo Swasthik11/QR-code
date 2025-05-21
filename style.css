@@ -1,52 +1,51 @@
 body {
-    background-color: #d5e1ef;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    margin: 0;
-    padding: 1rem;
-  }
-  
-  .card {
-    background-color: white;
-    border-radius: 1.25rem;
-    padding: 1.5rem;
-    width: 100%;
-    max-width: 320px;
-    text-align: center;
-    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.1);
-  }
-  
-  .card img {
-    width: 100%;
-    max-width: 100%;
-    height: auto;
-    border-radius: 0.9375rem;
-    display: block;
-    object-fit: contain;
-  }
-  
+  background-color: #d5e1ef;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+  padding: 1rem;
+}
+
+.card {
+  background-color: white;
+  border-radius: 1.25rem;
+  padding: 1.5rem;
+  width: 100%;
+  max-width: 320px;
+  text-align: center;
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.1);
+}
+
+.card img {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  border-radius: 0.9375rem;
+  display: block;
+  object-fit: contain;
+}
+
+.card h2 {
+  font-size: 1.25rem;
+  margin: 1.25rem 0 0.625rem;
+  color: #1f3251;
+}
+
+.card p {
+  font-size: 0.9375rem;
+  color: #7b879d;
+  padding: 0 0.625rem;
+}
+
+@media (max-width: 400px) {
   .card h2 {
-    font-size: 1.25rem;
-    margin: 1.25rem 0 0.625rem;
-    color: #1f3251;
+    font-size: 1.1rem;
   }
-  
+
   .card p {
-    font-size: 0.9375rem;
-    color: #7b879d;
-    padding: 0 0.625rem;
+    font-size: 0.85rem;
   }
-  
-  @media (max-width: 400px) {
-    .card h2 {
-      font-size: 1.1rem;
-    }
-  
-    .card p {
-      font-size: 0.85rem;
-    }
-  }
-  
+}
