@@ -1,46 +1,57 @@
 body {
-    margin: 0;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #D5E1EF;
-    font-family: 'Arial', sans-serif;
+  background-color: #d5e1ef;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
 }
 
 .card {
-    width: 375px;
-    height: 480px;
-    background-color: #FFFFFF;
-    border-radius: 20px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    text-align: center;
+  background-color: white;
+  width: 320px;
+  height: 499px;
+  border-radius: 20px;
+  padding: 20px;
+  box-shadow: 0 25px 25px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+  border-radius: 15px;
+}
+
+.card h2 {
+  font-size: 1.25rem;
+  color: #1f3251;
+  margin: 0;
+}
+
+.card p {
+  font-size: 0.9375rem;
+  color: #7b879d;
+  margin: 0;
+  padding: 0 10px;
+}
+
+@media (max-width: 375px) {
+  .card {
+    width: 90vw;
+    height: auto;
     padding: 16px;
-    box-sizing: border-box;
-}
+  }
 
-.qr-code {
-    width: 100%;
-    height: 343px;
-    background-color: #2C7DFA;
-    border-radius: 10px;
-}
+  .card h2 {
+    font-size: 1.1rem;
+  }
 
-.text-content {
-    padding: 16px;
-}
-
-h1 {
-    font-size: 24px;
-    color: #1F314F;
-    margin: 0 0 16px;
-    font-weight: 700;
-    line-height: 1.2;
-}
-
-p {
-    font-size: 16px;
-    color: #7D889E;
-    margin: 0;
-    line-height: 1.4;
+  .card p {
+    font-size: 0.85rem;
+  }
 }
