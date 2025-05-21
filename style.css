@@ -1,54 +1,64 @@
-/* Container body - mimics mobile screen */
+/* Full-screen mobile-like layout */
 body {
   background-color: #d5e1ef;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  width: 375px;
-  height: 812px;
   display: flex;
   justify-content: center;
   align-items: center;
+  min-height: 100vh;
   margin: 0;
   padding: 0;
 }
 
-/* QR card container */
+/* Card container */
 .card {
   background-color: white;
-  width: 20px;
-  height: 20px;
   border-radius: 20px;
-  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.1);
-  padding: 16px 16px 32px 16px;
+  padding: 16px;
+  width: 320px;
+  height: auto;
   text-align: center;
-
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.1);
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: flex-start;
   gap: 24px;
 }
 
-/* QR Image */
+/* QR image */
 .card img {
   width: 100%;
+  max-width: 288px;       /* Leave some margin inside the card */
   height: auto;
   border-radius: 15px;
-  object-fit: contain;
-  display: block;
+  align-self: center;
 }
 
 /* Heading */
 .card h2 {
   font-size: 1.25rem;
-  color: #1f3251;
   margin: 0;
-  padding: 0 10px;
+  color: #1f3251;
 }
 
 /* Paragraph */
 .card p {
   font-size: 0.9375rem;
   color: #7b879d;
-  margin: 0;
   padding: 0 10px;
+  margin: 0;
+}
+
+/* Responsive tweaks for smaller screens */
+@media (max-width: 375px) {
+  .card {
+    width: 90%;
+  }
+
+  .card h2 {
+    font-size: 1.1rem;
+  }
+
+  .card p {
+    font-size: 0.85rem;
+  }
 }
